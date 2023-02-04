@@ -6,7 +6,7 @@
             <h1 class="logo">
                 <a href="." class="logo__link"
                     >
-                    <!-- <img class="logo__img" src="img/logo.svg" alt="PON DESIGN"/>  -->
+                    <!-- <img class="logo__img" src="/img/logo.svg" alt="PON DESIGN"/>  -->
 
                 </a>
                 サンプルサイト

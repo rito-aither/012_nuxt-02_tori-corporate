@@ -118,7 +118,7 @@
                             <div class="c-card__img-wrapper">
                                 <img
                                     class="c-card__img"
-                                    src="img/service01.jpg"
+                                    src="/img/service01.jpg"
                                     alt=""
                                 />
                             </div>
@@ -135,7 +135,7 @@
                             <div class="c-card__img-wrapper">
                                 <img
                                     class="c-card__img"
-                                    src="img/service02.jpg"
+                                    src="/img/service02.jpg"
                                     alt=""
                                 />
                             </div>
@@ -152,7 +152,7 @@
                             <div class="c-card__img-wrapper">
                                 <img
                                     class="c-card__img"
-                                    src=" img/service03.jpg"
+                                    src="/img/service03.jpg"
                                     alt=""
                                 />
                             </div>
@@ -181,18 +181,18 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img
-                                        src="img/works/smoothiesta.jpg"
+                                        src="/img/works/smoothiesta.jpg"
                                         alt=""
                                     />
                                 </div>
                                 <div class="swiper-slide">
                                     <img
-                                        src="img/works/web-conference.jpg"
+                                        src="/img/works/web-conference.jpg"
                                         alt=""
                                     />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/works/lamina.jpg" alt="" />
+                                    <img src="/img/works/lamina.jpg" alt="" />
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -365,9 +365,9 @@ export default {
 
 <script setup lang="ts">
 const slides = ref([
-    'img/works/smoothiesta.jpg',
-    'img/works/web-conference.jpg',
-    'img/works/lamina.jpg',
+    '/img/works/smoothiesta.jpg',
+    '/img/works/web-conference.jpg',
+    '/img/works/lamina.jpg',
 ])
 
 const news = ref([
