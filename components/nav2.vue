@@ -1,5 +1,5 @@
 <template>
-    <header class="text-white mx-auto bg-gray-500">
+    <header class="text-white w-full mx-auto bg-gray-500">
         <div
             class="flex justify-between items-center fixed w-full left-0 bg-gray-500 h-16 px-2 md:static"
         >
@@ -13,9 +13,9 @@
             <div class="flex justify-between">
                 <div :class="isOpen ? 'block' : 'hidden'" class="md:block">
                     <nav
-                        class="mt-10 md:mt-0 h-full md:overflow-visible p-global-nav fixed z-50 bg-gray-500 w-full left-0 md:static"
+                        class="mt-10 md:mt-0 h-full p-global-nav fixed z-50 bg-gray-500 w-full left-0 md:static"
                     >
-                        <ul class="md:flex md:justify-end">
+                        <ul class="flex flex-col md:flex-row items-center md:justify-end">
                             <li
                                 class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
                             >
