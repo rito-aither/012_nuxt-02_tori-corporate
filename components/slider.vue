@@ -1,8 +1,8 @@
 <template>
     <div class="w-full">
-        <carousel :items-to-show="1" :wrap-around="true" class=" -z-50">
+        <carousel :items-to-show="1" :wrap-around="true">
             <slide v-for="(slide, index) in slides" :key="index">
-                <div class="carousel__item bg-slate-400 flex flex-col">
+                <div class="carousel__item bg-slate-400 flex">
                     <img :src="slide" alt="" />
                     <!-- <img :src="slide" alt="" /> -->
                 </div>
@@ -49,7 +49,7 @@ export default defineComponent({
 <style lang="scss">
 .carousel__item {
     min-height: 200px;
-    // width: 100%;
+    width: 100%;
     // background-color: gray;
     color: white;
     font-size: 20px;
