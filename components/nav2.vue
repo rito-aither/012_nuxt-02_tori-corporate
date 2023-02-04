@@ -4,51 +4,62 @@
             class="flex justify-between items-center fixed w-full left-0 bg-gray-500 h-16 px-2 md:static"
         >
             <h1 class="logo">
-                <a href="." class="logo__link"
-                    >
-                    <!-- <img class="logo__img" src="img/logo.svg" alt="PON DESIGN"/>  -->
-
+                <a href="/" class="logo__link">
+                    <!-- <img class="logo__img" src="/img/logo.svg" alt="PON DESIGN"/>  -->
+                    サンプルサイト
                 </a>
-                サンプルサイト
+
             </h1>
             <div class="flex justify-between">
                 <div :class="isOpen ? 'block' : 'hidden'" class="md:block">
                     <nav
-                        class="mt-10 md:mt-0 h-full md:overflow-visible p-global-nav fixed bg-gray-500 w-full left-0 md:static"
+                        class="mt-10 md:mt-0 h-full md:overflow-visible p-global-nav fixed z-50 bg-gray-500 w-full left-0 md:static"
                     >
                         <ul class="md:flex md:justify-end">
-                            <li class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded">
+                            <li
+                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
+                            >
                                 <a class="p-global-nav__link" href="news.html"
                                     >news</a
                                 >
                             </li>
-                            <li class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded">
+                            <li
+                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
+                            >
                                 <a
                                     class="p-global-nav__link"
                                     href="service.html"
                                     >service</a
                                 >
                             </li>
-                            <li class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded">
+                            <li
+                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
+                            >
                                 <a class="p-global-nav__link" href="works.html"
                                     >works</a
                                 >
                             </li>
-                            <li class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded">
+                            <li
+                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
+                            >
                                 <a
                                     class="p-global-nav__link"
                                     href="company.html"
                                     >company</a
                                 >
                             </li>
-                            <li class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded">
+                            <li
+                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
+                            >
                                 <a
                                     class="p-global-nav__link"
                                     href="recruit.html"
                                     >recruit</a
                                 >
                             </li>
-                            <li class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded">
+                            <li
+                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
+                            >
                                 <a
                                     class="p-global-nav__link"
                                     href="contact.html"

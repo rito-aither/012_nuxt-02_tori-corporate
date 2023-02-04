@@ -1,6 +1,6 @@
 <template>
-    <nav2></nav2>
-    <div class="p-hero flex items-center justify-center w-full">
+    <!-- <nav2></nav2> -->
+    <div class="p-hero flex items-center justify-center w-full text-slate-50">
         <div class="p-hero__inner text-center text-xl">
             <div class="p-hero__heading">
                 <div class="p-hero__title text-5xl">WEB DESIGN SPECIALIST</div>
@@ -20,11 +20,13 @@
     <main class="l-contents m-10">
         <section class="">
             <div
-                class="p-news__inner l-inner flex flex-col items-center md:flex-row"
+                class="p-news__inner l-inner flex flex-col items-center md:flex-row md:mx-12"
             >
-                <div class="p-news__heading">
-                    <h2 class="c-heading-primary">news</h2>
-                    <span class="c-heading-primary__sub">お知らせ</span>
+                <div class="p-news__heading md:mr-10">
+                    <h2 class="c-heading-primary">news <br>
+                        <span class="c-heading-primary__sub text-lg">お知らせ</span>
+                    </h2>
+
                 </div>
                 <div class="p-news__body">
                     <div class="p-news-list">
@@ -32,70 +34,31 @@
                             <!-- <div v-for="(data,index) in news"
                                 :key="index"> -->
                             <li
-                                v-for="(data, index) in news"
+                                v-for="(n, index) in data"
                                 :key="index"
                                 class="p-news-list__item flex flex-col md:flex-row m-3 mt-10 text-lg"
                             >
-                                <div class="p-news-list__heading flex">
+                                <div class="p-news-list__heading flex mb-3">
                                     <time
-                                        :datetime="data.date"
+                                        :datetime="n.date"
                                         class="p-news-list__date"
-                                        >{{ data.date }}</time
+                                        >{{ n.date }}</time
                                     >
-                                    <div class="p-news-list__label ml">
+                                    <div class="p-news-list__label ml-5">
                                         <span
                                             class="c-label-category bg-gray-300 rounded-3xl pl-2 pr-2 p-1"
-                                            >{{ data.type }}</span
+                                            >{{ n.type }}</span
                                         >
                                     </div>
                                 </div>
-                                <div class="p-news-list__body">
+                                <div class="p-news-list__body md:ml-5">
                                     <a
                                         href="news-article.html"
                                         class="p-news-list__link"
-                                        >{{ data.content }}</a
+                                        >{{ n.content }}</a
                                     >
                                 </div>
                             </li>
-                            <!-- </div> -->
-                            <!-- <li class="p-news-list__item flex-col md:flex-row">
-                                <div class="p-news-list__heading">
-                                    <time
-                                        datetime="2020-02-01"
-                                        class="p-news-list__date"
-                                        >2030.01.25</time
-                                    >
-                                    <div class="p-news-list__label">
-                                        <span class="c-label-category"
-                                            >制作実績</span
-                                        >
-                                    </div>
-                                </div>
-                                <div class="p-news-list__body">
-                                    <a href="#" class="p-news-list__link"
-                                        >Smoothiesta様のWebサイトを制作いたしました</a
-                                    >
-                                </div>
-                            </li>
-                            <li class="p-news-list__item flex-col md:flex-row">
-                                <div class="p-news-list__heading">
-                                    <time
-                                        datetime="2020-02-01"
-                                        class="p-news-list__date"
-                                        >2030.01.20</time
-                                    >
-                                    <div class="p-news-list__label">
-                                        <span class="c-label-category"
-                                            >採用</span
-                                        >
-                                    </div>
-                                </div>
-                                <div class="p-news-list__body">
-                                    <a href="#" class="p-news-list__link"
-                                        >Webデザイナーを１名募集中です！</a
-                                    >
-                                </div>
-                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -118,7 +81,7 @@
                             <div class="c-card__img-wrapper">
                                 <img
                                     class="c-card__img"
-                                    src="img/service01.jpg"
+                                    src="/img/service01.jpg"
                                     alt=""
                                 />
                             </div>
@@ -135,7 +98,7 @@
                             <div class="c-card__img-wrapper">
                                 <img
                                     class="c-card__img"
-                                    src="img/service02.jpg"
+                                    src="/img/service02.jpg"
                                     alt=""
                                 />
                             </div>
@@ -152,7 +115,7 @@
                             <div class="c-card__img-wrapper">
                                 <img
                                     class="c-card__img"
-                                    src=" img/service03.jpg"
+                                    src="/img/service03.jpg"
                                     alt=""
                                 />
                             </div>
@@ -181,18 +144,18 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img
-                                        src="img/works/smoothiesta.jpg"
+                                        src="/img/works/smoothiesta.jpg"
                                         alt=""
                                     />
                                 </div>
                                 <div class="swiper-slide">
                                     <img
-                                        src="img/works/web-conference.jpg"
+                                        src="/img/works/web-conference.jpg"
                                         alt=""
                                     />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/works/lamina.jpg" alt="" />
+                                    <img src="/img/works/lamina.jpg" alt="" />
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -256,29 +219,28 @@
                 </div>
             </div>
         </section>
-        <Contact></Contact>
+        <!-- <Contact></Contact> -->
     </main>
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
 </template>
 
 <style lang="scss">
+section {
+    margin-top: 100px;
+}
+
 .p-hero {
     height: 100vh;
-    color: #fff;
-    background-image: url(img/hero.jpg);
+    // color: #fff;
+    background-image: url(/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .l-inner {
     margin-top: 50px;
 }
-.c-heading-primary {
-    font-weight: bold;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #391e88;
-    font-size: 36px;
-    font-size: 2.25rem;
-}
+
 .p-message__heading {
     font-weight: bold;
     line-height: 1;
@@ -289,50 +251,6 @@
 }
 .p-message__underline {
     background: linear-gradient(transparent 70%, #f5f534 0%);
-}
-section {
-    margin-top: 50px;
-}
-
-.c-btn {
-    margin-top: 30px;
-    position: relative;
-    font-weight: bold;
-    line-height: 1.4;
-    display: inline-block;
-    width: 220px;
-    padding: 18px 0;
-    transition: 0.3s;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 50px;
-    background-image: linear-gradient(
-        to right,
-        #7633a4 0%,
-        #250d65 51%,
-        #7633a4 100%
-    );
-    background-size: 200% auto;
-    font-size: 14px;
-    font-size: 0.875rem;
-}
-.c-btn--transparent {
-    border: 1px solid #fff;
-    background: none;
-}
-
-.c-card{
-    margin :24px
-
-}
-.c-card__body{
-    margin-top :24px
-}
-.c-card__text{
-    text-align: start;
 }
 </style>
 <!-- <script lang="ts">
@@ -364,22 +282,13 @@ export default {
 </script> -->
 
 <script setup lang="ts">
+import { news } from '../data/news.json'
 const slides = ref([
-    'img/works/smoothiesta.jpg',
-    'img/works/web-conference.jpg',
-    'img/works/lamina.jpg',
+    '/img/works/smoothiesta.jpg',
+    '/img/works/web-conference.jpg',
+    '/img/works/lamina.jpg',
 ])
 
-const news = ref([
-    {
-        type: 'お知らせ',
-        date: '2030/01/01',
-        content: 'Webデザインニュースサイト「〇〇」に取材いただきました',
-    },
-    {
-        type: '制作実績',
-        date: '2030/01/01',
-        content: '〇〇様のWebサイトを制作いたしました',
-    },
-])
+const findnews = [news[0],news[1],news[2]]
+const data = ref(findnews)
 </script>
