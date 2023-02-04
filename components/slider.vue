@@ -1,6 +1,6 @@
 <template>
     <div class="w-full">
-        <carousel :items-to-show="1" :wrap-around="true">
+        <carousel :items-to-show="1" :wrap-around="true" class=" -z-50">
             <slide v-for="(slide, index) in slides" :key="index">
                 <div class="carousel__item bg-slate-400 flex flex-col">
                     <img :src="slide" alt="" />
