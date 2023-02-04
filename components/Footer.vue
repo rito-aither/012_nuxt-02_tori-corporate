@@ -3,10 +3,12 @@
         <nav class="l-footer-nav bg-blue-300 text-slate-50 pt-10 pb-5 text-base w-full " >
             <ul class="l-footer-nav__list flex justify-center mt-50">
                 <li class="l-footer-nav__item">
-                    <a class="l-footer-nav__link" href=".">HOME</a>
+                    <!-- <a class="l-footer-nav__link" href=".">HOME</a> -->
+                    <NuxtLink to="/">home</NuxtLink>
                 </li>
                 <li class="l-footer-nav__item">
-                    <a class="l-footer-nav__link" href="news.html">news</a>
+                    <!-- <a class="l-footer-nav__link" href="news.html">news</a> -->
+                    <NuxtLink to="/news">news</NuxtLink>
                 </li>
                 <li class="l-footer-nav__item">
                     <a class="l-footer-nav__link" href="service.html"
