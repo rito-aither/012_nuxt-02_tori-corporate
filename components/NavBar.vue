@@ -1,7 +1,7 @@
 <template>
-    <header class="text-white w-full mx-auto bg-gray-500">
+    <header class="text-white bg-gray-500 ">
         <div
-            class="flex justify-between items-center fixed w-full left-0 bg-gray-500 h-16 px-2 md:static"
+            class="flex justify-between items-center  bg-gray-500 h-16 px-2 sticky md:static"
         >
             <h1 class="logo">
                 <a href="/" class="logo__link">
@@ -13,7 +13,7 @@
             <div class="flex justify-between">
                 <div :class="isOpen ? 'block' : 'hidden'" class="md:block">
                     <nav
-                        class="mt-10 md:mt-0 h-full p-global-nav fixed z-50 bg-gray-500 w-full left-0 md:static"
+                        class="mt-10 md:mt-0 h-full p-global-nav fixed   z-50 bg-gray-500 w-full left-0 md:static"
                     >
                         <ul class="flex flex-col md:flex-row items-center md:justify-end">
                             <li
