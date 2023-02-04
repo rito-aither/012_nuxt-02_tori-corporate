@@ -10,7 +10,7 @@
 
             <template #addons :>
                 <navigation />
-                <pagination />
+                <!-- <pagination />　うまく行かないからひとまず置いとく -->
             </template>
         </carousel>
     </div>
