@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full text-white bg-gray-500">
+    <header class="text-white mx-auto bg-gray-500">
         <div
             class="flex justify-between items-center fixed w-full left-0 bg-gray-500 h-16 px-2 md:static"
         >
@@ -19,18 +19,20 @@
                             <li
                                 class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
                             >
-                                <a class="p-global-nav__link" href="news.html"
+                                <!-- <a class="p-global-nav__link" href="news.html"
                                     >news</a
-                                >
+                                > -->
+                                <NuxtLink to="/news">news</NuxtLink>
                             </li>
                             <li
                                 class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
                             >
-                                <a
+                                <!-- <a
                                     class="p-global-nav__link"
                                     href="service.html"
                                     >service</a
-                                >
+                                > -->
+                                <NuxtLink to="/service">service</NuxtLink>
                             </li>
                             <li
                                 class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
