@@ -1,13 +1,6 @@
 <template>
     <!-- <Nav2></Nav2> -->
-    <div class="p-sub-hero flex justify-center items-center h-80 text-slate-50">
-        <div
-            class="p-sub-hero__inner text-5xl flex flex-col w-full items-center"
-        >
-            <h2 class="c-heading-primary--white">news</h2>
-            <span class="c-heading-primary__sub text-2xl mt-5">お知らせ</span>
-        </div>
-    </div>
+<SubHero title="news" title-content="お知らせ"></SubHero>
 
     <main class="l-contents w-full">
         <section class="p-news-list-wrapper l-section">
@@ -59,7 +52,7 @@
     background-position: center center;
     background-size: cover;
 }
-.c-heading-primary {
+/* .c-heading-primary { */
     /* margin-bottom: 50px;
     font-weight: bold;
     line-height: 1.2;
@@ -68,7 +61,7 @@
     /* color: #391e88; */
     /* font-size: 36px; */
     /* font-size: 2.25rem;  */
-}
+/* } */
 </style>
 <script setup lang="ts">
 import { news } from '../data/news.json'

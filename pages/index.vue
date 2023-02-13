@@ -241,17 +241,7 @@ section {
     margin-top: 50px;
 }
 
-.p-message__heading {
-    font-weight: bold;
-    line-height: 1;
-    display: inline-block;
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-size: 2.5rem;
-}
-.p-message__underline {
-    background: linear-gradient(transparent 70%, #f5f534 0%);
-}
+
 </style>
 <!-- <script lang="ts">
 import { defineComponent } from 'vue'

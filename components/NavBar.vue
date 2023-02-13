@@ -1,71 +1,31 @@
 <template>
-    <header class="text-white bg-gray-500 ">
+    <header class="text-white bg-gray-500">
         <div
-            class="flex justify-between items-center  bg-gray-500 h-16 px-2 sticky md:static"
+            class="flex justify-between items-center bg-gray-500 h-16 px-2 sticky md:static"
         >
             <h1 class="logo">
                 <a href="/" class="logo__link">
                     <!-- <img class="logo__img" src="/img/logo.svg" alt="PON DESIGN"/>  -->
                     サンプルサイト
                 </a>
-
             </h1>
             <div class="flex justify-between">
                 <div :class="isOpen ? 'block' : 'hidden'" class="md:block">
                     <nav
-                        class="mt-10 md:mt-0 h-full p-global-nav fixed   z-50 bg-gray-500 w-full left-0 md:static"
+                        class="mt-10 md:mt-0 h-full p-global-nav fixed z-50 bg-gray-500 w-full left-0 md:static"
                     >
-                        <ul class="flex flex-col md:flex-row items-center md:justify-end">
+                        <ul
+                            class="flex flex-col md:flex-row items-center md:justify-end"
+                        >
                             <li
+                                v-for="(n, index) in navitmes"
+                                :key="index"
                                 class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
                             >
-                                <!-- <a class="p-global-nav__link" href="news.html"
-                                    >news</a
-                                > -->
-                                <NuxtLink to="/news">news</NuxtLink>
-                            </li>
-                            <li
-                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
-                            >
-                                <!-- <a
-                                    class="p-global-nav__link"
-                                    href="service.html"
-                                    >service</a
-                                > -->
-                                <NuxtLink to="/service">service</NuxtLink>
-                            </li>
-                            <li
-                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
-                            >
-                                <a class="p-global-nav__link" href="works.html"
-                                    >works</a
-                                >
-                            </li>
-                            <li
-                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
-                            >
-                                <a
-                                    class="p-global-nav__link"
-                                    href="company.html"
-                                    >company</a
-                                >
-                            </li>
-                            <li
-                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
-                            >
-                                <a
-                                    class="p-global-nav__link"
-                                    href="recruit.html"
-                                    >recruit</a
-                                >
-                            </li>
-                            <li
-                                class="p-global-nav__item block px-8 py-1 my-4 hover:bg-gray-600 rounded"
-                            >
-                                <a
-                                    class="p-global-nav__link"
-                                    href="contact.html"
-                                    >contact</a
+                                <NuxtLink
+                                    @click="isOpen = !isOpen"
+                                    :to="n.title"
+                                    >{{ n.title }}</NuxtLink
                                 >
                             </li>
                         </ul>
@@ -96,15 +56,28 @@
     </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    data() {
-        return {
-            isOpen: false,
-        }
+<script setup lang="ts">
+const isOpen = ref(false)
+const navitmes = ref([
+    {
+        title: 'news',
+        titleContent: '',
     },
-    setup() {},
-})
+    {
+        title: 'service',
+        titleContent: '',
+    },
+    {
+        title: 'works',
+        titleContent: '',
+    },
+    {
+        title: 'company',
+        titleContent: '',
+    },
+    {
+        title: 'contact',
+        titleContent: '',
+    },
+])
 </script>

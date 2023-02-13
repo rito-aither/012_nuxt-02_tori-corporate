@@ -2,7 +2,7 @@
     <div class="w-full">
         <carousel :items-to-show="1" :wrap-around="true">
             <slide v-for="(slide, index) in slides" :key="index">
-                <div class="carousel__item bg-slate-400 flex">
+                <div class="carousel__item bg-slate-50 flex">
                     <img :src="slide" alt="" />
                     <!-- <img :src="slide" alt="" /> -->
                 </div>
@@ -54,9 +54,9 @@ export default defineComponent({
     color: white;
     font-size: 20px;
     border-radius: 8px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .carousel__slide {
     padding: 10px;
