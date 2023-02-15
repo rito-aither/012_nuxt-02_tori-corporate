@@ -47,7 +47,7 @@
                     >
                         <div class="c-media__img-wrapper">
                             <img
-                                src="img/service01.jpg"
+                                src="/img/service01.jpg"
                                 class="c-media__img"
                                 alt=""
                             />
@@ -67,7 +67,7 @@
                     >
                         <div class="c-media__img-wrapper">
                             <img
-                                src="img/service02.jpg"
+                                src="/img/service02.jpg"
                                 class="c-media__img"
                                 alt=""
                             />
@@ -87,7 +87,7 @@
                     >
                         <div class="c-media__img-wrapper">
                             <img
-                                src="img/service03.jpg"
+                                src="/img/service03.jpg"
                                 class="c-media__img"
                                 alt=""
                             />
